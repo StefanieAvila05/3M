@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para El Dueño de Mi Corazón 🗝️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <audio id="success-sound" src="No Hay Nadie Más.mp3" preload="auto"></audio>
+
+    <div class="container">
+        <div id="safe-box">
+            <h1>🔒 Desbloquea Nuestro Tesoro 🔒</h1>
+            <p>Ingresa la clave de nuestra promesa (8 dígitos):</p>
+            
+            <input type="password" id="password" placeholder="ddmmyyyy" maxlength="8">
+            <button onclick="checkPassword()">Intentar Desbloquear</button>
+            
+            <p class="error-msg" id="error-message">Intenta de nuevo. ¡Recuerda nuestra fecha!</p>
+            <p id="attempts">Intentos restantes: 3</p>
+        </div>
+
+        <div id="fail-message" class="hidden">
+            <h1 style="color: #d32f2f;">😭 ¡Intentos Agotados! 😭</h1>
+            <p>Parece que la memoria te ha fallado. La <b>PISTA</b> es: ¡La fecha donde todo se volvió oficial!</p>
+            <button onclick="resetGame()" style="background-color: #6a1b9a;">Volver a Intentar</button> 
+        </div>
+
+<div id="secret-message" class="hidden">
+            <h1 class="animate-text">¡Sabía que la Recordarías!</h1>
+            
+            <div class="card-content">
+                <p>Mi amor,</p>
+                <p>Si pudiste abrir esta "caja fuerte", es porque nuestra fecha especial está tan grabada en tu corazón como lo está en el mío. Gracias por recordar el día en que nuestra historia se puso en marcha.</p>
+
+                <h3>Tú Eres El Dueño De Mi Corazón</h3>
+                
+                <p>No necesito buscar en ningún mapa ni escribir código complejo para saber dónde quiero estar: que es estar contigo a pesar de todo. Contigo, los días son a veces dificiles y a veces faciles pero aún así me quedare y seguirás aguantando mis chistes malos y molestarte a cada rato. Eres esa persona que me hace sentir que todo está bien, incluso cuando el mundo está en contra de mi.</p>
+
+                <p>Quiero darte algo hecho por mí, no tan mio porque si tuve un poco de ayuda pero me nació hacerlo. Quizás sea digital y sencillo pero espero más adelante sean cosas presenciales o simplemente pasar el dia juntos comiendo algo por ahi, cada palabra está cargada de todo el cariño que te tengo. Es mi manera de decirte que eres importante para mi y que disfruto creando cosas y no dar cosas que otras personas han dado, especialmente si son para ti</p>
+
+                <p>Gracias por ser el novio más increíble, mi compañero de aventuras y la persona con la que quiero compartir cada risa, cada momento por más pequeño que sea. No cambies, porque así, tal como eres, a pesar de los problemas, eres perfecto para mí.</p>
+                
+                <p>Te amo, hoy y en todos los días que vienen.</p>
+                
+                <p class="signature">- Feliz 3 meses mi amor bonito. ❤️</p>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
